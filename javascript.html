@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>(placeholder)</title>
+   <script type="text/javascript" src="scratchpad.js"></script>
+   <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="maindiv1">
+        <a href="https://oeis.org/A000045" target="_blank">Fibonacci</a>
+        <form>
+            <input type="range" min="0" max="11" value="0" onchange="fibSlider(this)">
+            <button type="button" onclick="fibButton(this)">
+                Fib(0)
+            </button>
+        </form>
+    </div>
+    <div class="maindiv2">
+        <a href="https://oeis.org/A000129" target="_blank">Pell</a>
+        <form>
+            <input type="range" min="0" max="11" value="0" onchange="pellSlider(this)">
+            <button type="button">
+                Pell(0)
+            </button>
+        </form>
+    </div>
+</body>
+</html>

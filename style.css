@@ -1,0 +1,51 @@
+#twotree{
+		display: inline-block;
+		width: 15000px;
+}
+#threetree{
+    display: inline-block;
+    width: 28000px;
+}
+.twotree {
+		background-color: rgba(204,0,102,0.1);
+		
+}
+.twoleft {
+		float: left;
+		display: inline-block;
+		margin-right: 4px;
+}
+	 
+.tworight {
+		float: right;
+		display: inline-block;
+		margin-left: 4px;
+}
+.threeleft{
+    float: left;
+    display: inline-block;
+    margin-right: 4px;
+}
+.threecenter{
+    float: left;
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.threeright{
+    float: right;
+    display: inline-block;
+    margin-left: 4px;
+}
+.maindiv1{
+    background: rgb(98, 214, 232);
+    text-align: center;
+}
+.maindiv2{
+    background: rgb(85, 246, 36);
+    text-align: center;
+}
+.maindiv3{
+    background: rgb(246, 190, 36);
+    text-align: center;
+}
