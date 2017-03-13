@@ -9,7 +9,7 @@
 
 document.title = "JavaScript";
 
-var fibSlider = function(me) {
+var fibSlider = function(me){
 	var form = me.parentNode;
 	var button = form.querySelector('button');
 	button.textContent = 'Fib(' + me.value + ')';
@@ -20,7 +20,7 @@ var fibButton = function(me){
     var number = slider.value;
     fibTree(number, form.parentNode);
 }
-var pellSlider = function(me) {
+var pellSlider = function(me){
 	var form = me.parentNode;
 	var button = form.querySelector('button');
 	button.textContent = 'Pell(' + me.value + ')';
@@ -31,7 +31,7 @@ var pellButton = function(me){
     var number = slider.value;
     pellTree(number, form.parentNode);
 }
-var tribSlider = function(me) {
+var tribSlider = function(me){
 	var form = me.parentNode;
 	var button = form.querySelector('button');
 	button.textContent = 'Trib(' + me.value + ')';
@@ -187,22 +187,3 @@ function pellTree(n, node){
     node.appendChild(display.html);
     node.setAttribute("id", "hello");
 }
-
-var divMaker = function(id, n) {
-	return function() {
-		var div = document.createElement('div');
-		div.setAttribute('class', 'maindiv' + n);
-		div.setAttribute('id', id);
-		document.body.appendChild(div);
-	}
-}
-
-var fibDiv = divMaker("twotree", 1);
-var pellDiv = divMaker("twotree", 2);
-var tribDiv = divMaker("threetree", 3);
-fibDiv();
-pellDiv();
-tribDiv();
-fibTree(11, document.querySelector(".maindiv1"));
-pellTree(11, document.querySelector(".maindiv2"));
-tribTree(11, document.querySelector(".maindiv3"));
