@@ -36,6 +36,12 @@ var tribSlider = function(me) {
 	var button = form.querySelector('button');
 	button.textContent = 'Trib(' + me.value + ')';
 }
+var tribButton = function(me){
+    var form = me.parentNode;
+    var slider = form.querySelector("input");
+    var number = slider.value;
+    tribTree(number, form.parentNode);
+}
 function fib(n){
   n = parseInt(n);
   var div = document.createElement("div");
@@ -127,9 +133,13 @@ function trib(n){
     return {'value': value, 'html': div};
 }
 function tribTree(n, node){
+    var tree = node.querySelector("div.twotree");
+    if(tree){
+        node.removeChild(tree);
+    }
     var display = trib(n);
     node.appendChild(display.html);
-    node.setAttribute("id", "threetree");
+    node.setAttribute("id", "hello");
     
 }
 function pell(n){
