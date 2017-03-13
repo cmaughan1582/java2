@@ -19,7 +19,11 @@ var pellSlider = function(me) {
 	var button = form.querySelector('button');
 	button.textContent = 'Pell(' + me.value + ')';
 }
-
+var tribSlider = function(me) {
+	var form = me.parentNode;
+	var button = form.querySelector('button');
+	button.textContent = 'Trib(' + me.value + ')';
+}
 function fib(n){
   n = parseInt(n);
   var div = document.createElement("div");
