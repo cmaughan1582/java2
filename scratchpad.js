@@ -25,6 +25,12 @@ var pellSlider = function(me) {
 	var button = form.querySelector('button');
 	button.textContent = 'Pell(' + me.value + ')';
 }
+var pellButton = function(me){
+    var form = me.parentNode;
+    var slider = form.querySelector("input");
+    var number = slider.value;
+    pellTree(number, form.parentNode);
+}
 var tribSlider = function(me) {
 	var form = me.parentNode;
 	var button = form.querySelector('button');
@@ -163,9 +169,13 @@ function pell(n){
     return {'value': value, 'html': div};
 }
 function pellTree(n, node){
+    var tree = node.querySelector("div.twotree");
+    if(tree){
+        node.removeChild(tree);
+    }
     var display = pell(n);
     node.appendChild(display.html);
-    node.setAttribute("id", "twotree");
+    node.setAttribute("id", "hello");
 }
 
 var divMaker = function(id, n) {
